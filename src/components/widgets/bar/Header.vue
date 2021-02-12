@@ -6,13 +6,13 @@
       src="@/assets/logo.png"
       width="45"
     />
-    <span class="title">Geoguess Master</span>
+    <span class="title">MG GeoGuess</span>
     <div class="flex-grow-1"></div>
-    <v-btn 
+    <!-- <v-btn 
       text
       color="#FFFFFF"
       href="#section-about">
-      <span>ABOUT</span>
+      <span>LE JEU</span>
     </v-btn>
     <v-btn
       text
@@ -25,7 +25,7 @@
       color="#FFFFFF"
       href="#contact">
       <span>CONTACT</span>
-    </v-btn>
+    </v-btn> -->
   </v-app-bar>
 </template>
 

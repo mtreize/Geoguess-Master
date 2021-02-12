@@ -206,6 +206,8 @@ export default defineComponent({
       if (viewport.width > 450) {
         document.getElementById('map')!.style.opacity = '1.0'
         document.getElementById('map')!.style.transform = 'scale(1)'
+        document.getElementById('map')!.style.width = '80%'
+        document.getElementById('map')!.style.height = '80%'
       }
     }
 
@@ -213,6 +215,8 @@ export default defineComponent({
       if (!state.isSelected && viewport.width > 450) {
         document.getElementById('map')!.style.opacity = '0.7'
         document.getElementById('map')!.style.transform = 'scale(0.75)'
+          document.getElementById('map')!.style.width = ''
+          document.getElementById('map')!.style.height = ''
       }
     }
 
@@ -265,7 +269,7 @@ export default defineComponent({
   width: 480px;
   transform-origin: bottom left;
   transform: scale(0.75);
-  transition: transform 0.3s; 
+  transition: transform 0.3s, width 0.3s, height 0.3s;
 }
 
 #make-guess-button, #guess-button, #next-button, #summary-button {
@@ -316,7 +320,7 @@ export default defineComponent({
     height: 200px;
     width: 300px;
     opacity: 1.0;
-    transition: transform 1s;
+    transition: transform 1s, width 1s, height 1s;
   }
 
   #next-button, #summary-button {
